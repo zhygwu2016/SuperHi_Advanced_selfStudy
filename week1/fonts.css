@@ -1,0 +1,24 @@
+/* @font-face allows us to embed custom fonts on our page
+   here we're borrowing the code snippet form css tricks
+   which provides modern (by still very wide) browser support */
+/* https://css-tricks.com/snippets/css/using-font-face/ */
+
+@font-face {
+  font-family: 'LunchType-Regular';
+  src: url('assets/fonts/lunchtype22-regular-webfont.woff2') format('woff2'),
+       url('assets/fonts/lunchtype22-regular-webfont.woff') format('woff'),
+       url('assets/fonts/lunchtype22-regular-webfont.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'LunchType-Medium';
+  src: url('assets/fonts/lunchtype24-medium-expanded-webfont.woff2') format('woff2'),
+       url('assets/fonts/lunchtype24-medium-expanded-webfont.woff') format('woff'),
+       url('assets/fonts/lunchtype24-medium-expanded-webfont.ttf') format('truetype');
+}
+
+body{
+  font-family: 'LunchType-Regular', sans-serif;
+  font-size:18px;
+  line-height: 1.5;
+}

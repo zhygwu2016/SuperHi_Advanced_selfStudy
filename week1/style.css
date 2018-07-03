@@ -1,0 +1,81 @@
+body{
+  font-family: 'LunchType-Regular', sans-serif;
+  font-size:18px;
+  line-height: 1.5;
+}
+
+.section{
+  min-height: 100vh;
+
+  /* this enables flexbox (the modern layout mode in css) */
+  display: flex;
+}
+
+/* here we have a little helper class that adds padding to our sections
+   that can be reused and just does one thing */
+.section-pad{
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.container{
+  max-width: 810px;
+  margin: auto; /* this will center our box like magic! */
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+
+.intro{
+  background-image: url(./assets/images/intro.jpg);
+  color:#ffffff;
+}
+
+.intro p{
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.logo{
+  display: block;
+  text-align: center;
+  margin-bottom: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 112px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+/* another helper/utility class */
+.bg-cover{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@keyframes fadeIn {
+  0%{
+    opacity:0;
+    transform: translateY(20px);
+  }
+  50%{
+    transform: translate(0);
+  }
+  100%{
+    opacity:1;
+  }
+}
+
+.appear{
+  /* here we set the opacity as a starting point*/
+  opacity: 0;
+  /* here we include the animation name */
+  animation-name: fadeIn;
+  /* set a duration and delay */
+  animation-duration: 3s;
+  animation-delay: 2s;
+  /* make sure the end state stays the same */
+  animation-fill-mode: forwards;
+}
