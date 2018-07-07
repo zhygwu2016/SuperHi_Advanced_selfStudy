@@ -9,6 +9,7 @@ body{
 
   /* this enables flexbox (the modern layout mode in css) */
   display: flex;
+  position:relative;
 }
 
 /* here we have a little helper class that adds padding to our sections
@@ -78,4 +79,106 @@ body{
   animation-delay: 2s;
   /* make sure the end state stays the same */
   animation-fill-mode: forwards;
+}
+
+.marquee{
+  position: absolute;
+  top:3vh;
+  left:0;
+  width: 100%;
+  font-size: 5vw; /* each letter will be 5% of the viewport width (vw) */
+  line-height: 1;
+  overflow: hidden;
+  /* mix-blend-mode: difference; */
+}
+
+@keyframes moveLeft {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-3000vw);
+  }
+}
+
+.marquee span{
+  /* this will ensure the text stays all on the same line*/
+  white-space: nowrap;
+  /* our span is inline by default, so here we tell it to be block*/
+  display: block;
+  /* this will let us add our animation */
+  position: relative;
+  /* transform: translateX(); */
+
+  /* this is the shorthand (brief) version of the animation css rule */
+  animation: moveLeft 200s infinite;
+}
+
+.mix-difference {
+  /* our mix blend mode allows us to mix the current layer’s style/colors with that
+  of what’s behind it to create some really cool effects */
+  mix-blend-mode: difference;
+}
+
+.day-1{
+  background-color: #FD76A7;
+}
+
+.day-2{
+  background-color: #1BB190;
+}
+
+.day-3{
+  background-image: url(./assets/images/day-3.jpg);
+}
+
+.bg-cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.marquee,
+.lunch-medium,
+.date,
+.lineup h2{
+  font-family: 'LunchType-Medium', sans-serif;
+}
+
+.date{
+  font-size: 28px;
+  color:#FFEECF;
+  margin-bottom: 48px;
+  line-height: 1;
+}
+
+.day{
+  /* so our shapes position in relation to our day sections */
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.day .container {
+  /* this will force our content to display on top of our shapes */
+  position: relative;
+  z-index: 2;
+}
+
+.lineup{
+  text-align: center;
+}
+
+.lineup h2{
+  font-size: 56px;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.lineup p{
+  font-size: 21px;
+}
+
+.lineup li{
+  margin-bottom: 26px;
 }
