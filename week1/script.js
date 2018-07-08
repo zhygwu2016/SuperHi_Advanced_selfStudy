@@ -90,6 +90,7 @@ squiggles.forEach(function(squiggle, index){
     { transform: 'rotate(0)' },
     // here we join random number into our rotate property
     { transform: 'rotate(' + randomNumber + 'deg)' },
+    //{ transform: `rotate(${randomNumber}deg)` }, //another latest way
     { transform: 'rotate(0)' },
   ], {
     // timing options
@@ -120,3 +121,28 @@ squiggles.forEach(function(squiggle, index){
 // const name = 'lawrence'
 // const age = 26
 // const profile = `${name} is ${age}`
+
+// !!! USING GITHUB LIBRARY !!!
+// here we want to detect when our .section enters the viewport
+// when it does, we want to add a class of 'in-viewport', and
+// when it exits we want to remove it again
+// BASIC:
+// inView('.someSelector')
+//     .on('enter', doSomething)
+//     .on('exit', el => {
+//         el.style.opacity = 0.5;
+//     });
+inView('.section')
+    .on('enter', section =>{
+      section.classList.add('in-viewport');
+      // classList.add is the same as jQuery’s .addClass() method
+      // but the vanilla javascript version
+    })
+    .on('exit', section => {
+      section.classList.remove('in-viewport');
+    });
+
+// here we set the class to add only once we have scrolled 0.2 of
+// our section into the viewport
+// (This from the Github)
+inView.threshold(0.3);
