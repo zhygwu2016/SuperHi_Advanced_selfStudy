@@ -29,6 +29,7 @@ const circles = document.querySelectorAll('.circle');
 // inside of the forEach we get access to each individual element
 // along with its index
 circles.forEach(function(circle, index){
+//circles.forEach((circle, index) => {      //latest js
   // in here we get access to each one as 'circle'
   //console.log(circle);
   circle.animate([
@@ -78,6 +79,7 @@ function random(min,max)
 
 // similar as .circle, the animation which makes .squiggle roate
 const squiggles = document.querySelectorAll('.squiggle');
+
 squiggles.forEach(function(squiggle, index){
   // gets a random number between 0 and 45 using the random function
   const randomNumber = random(0,45);
@@ -96,3 +98,25 @@ squiggles.forEach(function(squiggle, index){
     iterations: Infinity
   });
 });
+
+// What’s the arrow thing about?
+// // in older javascript we’d write
+// ['lawrence', 'rik'].forEach(function(person) {
+//   // do something with each person ('rik' and 'lawrence')
+// })
+//
+// // in modern javascript we can write
+// ['lawrence', 'rik'].forEach(person => {
+//   // do something with each person
+// })
+
+// Joining strings together in modern Javascript
+// // in older javascript we would write
+// var name = 'lawrence'
+// var age = 26
+// var profile = name + ' is ' + age
+//
+// // in modern javascript we can write
+// const name = 'lawrence'
+// const age = 26
+// const profile = `${name} is ${age}`
