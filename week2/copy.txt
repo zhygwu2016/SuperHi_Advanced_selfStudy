@@ -1,0 +1,22 @@
+Copy:
+
+Jiffy.
+Type something
+Hit enter to search
+
+Fonts:
+
+Helvetica Neue Bold
+
+Title: 24px/1.2
+Search box: 72px/1
+Search hint: 24px/1
+
+Colors:
+
+White: #fff
+Black: #000
+
+Slides:
+
+jiffy-slides.netlify.com

@@ -1,0 +1,138 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5;
+	/* our padding will be linked to the screen size */
+  padding: 5vh 3vw;
+	/* our body tag by default is only as tall as its content,
+  so here we stretch it out */
+  min-height: 100vh;
+	/* here we enable flexbox, which stacks our boxes side by side 
+  by default */
+  display: flex;
+	/* here we tell our child boxes to stack on top of each other */
+  flex-direction: column;
+	/* here we tell our boxes to spread out and fill the available space
+  and create the gaps between them */
+  justify-content: space-between;
+}
+
+.top,
+.middle,
+.indicators {
+  text-align: center;
+  position: relative;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  outline: none;
+  text-align: center;
+  color: #fff;
+}
+
+.search-input {
+  font-size: 72px;
+}
+
+/* this styles up the placeholder text on our input */
+.search-input::placeholder {
+  color: #323232;
+}
+
+.search-clear,
+.spinner {
+  transition: opacity 0.5s ease;
+  opacity: 0;
+}
+
+.search-clear {
+	/* gives us a pointer hand to show that its interactive */
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+.title {
+  position: relative;
+  z-index: 1;
+}
+
+.videos,
+.middle,
+.grid {
+  display: grid;
+  place-items: center;
+}
+
+.video {
+	/* this tells each child video to take up full width and height of our grid */
+  grid-area: 1/1;
+  max-width: 500px;
+  max-height: 500px;
+  display: block;
+}
+
+.search-input,
+.videos,
+.full-area {
+  grid-area: 1/1;
+}
+
+.search-hint,
+.spinner {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.show-hint .search-hint,
+.loading .spinner,
+.has-results .search-clear {
+  opacity: 1;
+}
+
+.loading .search-hint,
+.has-results .title {
+  opacity: 0;
+}
+
+.title {
+  transition: opacity 0.5s ease;
+}
+
+/* responsive styles  */
+.video {
+  width: 100%;
+}
+
+.videos {
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.search-input {
+  width: 94vw;
+  line-height: 1;
+  height: 88px;
+}
+
+@media (max-width: 480px) {
+  
+  body {
+    font-size: 18px;
+  }
+  
+  .search-input {
+    font-size: 32px;
+  }
+  
+}
+
+
+
