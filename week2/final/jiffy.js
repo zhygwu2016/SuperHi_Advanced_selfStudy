@@ -36,7 +36,7 @@ const toggleLoading = state => {
   // if our state is true, we add a loading class to our body
   if (state) {
     document.body.classList.add('loading')
-		// here we disable the input so users can’t interfere with it 
+		// here we disable the input so users can’t interfere with it
 		// whilst it’s searching
     searchEl.disabled = true
   } else {
@@ -96,7 +96,7 @@ const searchGiphy = searchTerm => {
     })
     .catch(error => {
       // lastly we can use .catch() to do something in case our fetch fails
-			// here we toggle the loading state so it’s disabled
+			// here we toggle the loading state so it’s disabled  
     	toggleLoading(false)
 			// here we tell the user nothing was found
     	hintEl.innerHTML = `Nothing found for ${searchTerm}`
@@ -137,7 +137,7 @@ const clearSearch = event => {
   videosEl.innerHTML = ''
   hintEl.innerHTML = ''
   searchEl.value = ''
-	// here we focus the input cursor back onto our input 
+	// here we focus the input cursor back onto our input
   searchEl.focus()
 }
 
