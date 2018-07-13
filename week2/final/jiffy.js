@@ -96,7 +96,7 @@ const searchGiphy = searchTerm => {
     })
     .catch(error => {
       // lastly we can use .catch() to do something in case our fetch fails
-			// here we toggle the loading state so it’s disabled  
+			// here we toggle the loading state so it’s disabled
     	toggleLoading(false)
 			// here we tell the user nothing was found
     	hintEl.innerHTML = `Nothing found for ${searchTerm}`

@@ -1,0 +1,11 @@
+Colors
+
+Black: #000
+Blue: #77ebfd
+Red: #fc3035
+Yellow: #fff636
+Purple: #cb89fc
+
+Final
+
+super-shapes.superhi.com
