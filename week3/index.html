@@ -2,14 +2,53 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Super Shapes-ZHY</title>
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tachyons.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css"> -->
   </head>
 
   <body>
+    <!-- http://tachyons.io/docs/ -->
+    <!-- adding the tachyons flex class enables flexbox -->
+    <!-- items-stretch tells the child elements to take stretch all the full height -->
+    <!-- min-vh-100 adds a min-height of 100vh -->
+    <div class="page min-vh-100 flex items-stretch">
+      <!-- each of this divs are one of the three columns -->
+      <!-- using the w-third class tells each box to take up third of the width -->
+      <div class="w-third flex flex-wrap">
+        <!-- these are the styles for our individual boxes -->
+        <div class="w-100 h-50 bg-yellow flex flex-wrap">
+          <div class="w-25 h-100 bg-red"></div>
+          <div class="w-25 h-100 bg-purple"></div>
+          <div class="w-25 h-100 bg-yellow"></div>
+          <div class="w-25 h-100 bg-blue"></div>
+        </div>
+        <div class="w-100 h-25 bg-blue"></div>
+        <div class="w-100 h-25 bg-red"></div>
+      </div>
 
+      <!-- our second column -->
+      <div class="w-third flex flex-wrap">
+        <div class="w-100 h-25 bg-blue"></div>
+        <div class="w-100 h-25 bg-red"></div>
+        <div class="w-100 h-50 bg-yellow"></div>
+      </div>
+      <!-- the third column -->
+      <div class="w-third flex flex-wrap">
+        <div class="w-100 h-50 bg-purple"></div>
+        <div class="w-100 h-25 bg-yellow flex flex-wrap">
+          <div class="w-50 h-50 bg-blue"></div>
+          <div class="w-50 h-50 bg-red"></div>
+          <div class="w-50 h-50 bg-purple"></div>
+          <div class="w-50 h-50 bg-yello"></div>
+        </div>
+        <div class="w-50 h-25 bg-blue"></div>
+        <div class="w-50 h-25 bg-purple"></div>
+      </div>
 
+    </div>
 
 
     <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
