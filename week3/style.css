@@ -1,5 +1,5 @@
-body{
-  background-color: #000;
-  color:#fff;
-  font-size: 48px;
+.tunnel circle{
+  /* by default elements transform from their top left corner
+    so here we are telling the circles to transform from the center */
+  transform-origin: center;
 }
