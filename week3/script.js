@@ -35,18 +35,31 @@ anime({
 
 
 // https://codepen.io/juliangarnier/pen/ZeEpgd
-  const zigZagPath = document.querySelector('#zigzag path');
-  // setDashoffset figures out how long our path is
-  const zigZagoffset = anime.setDashoffset(zigZagPath);
-  // we then set that back onto the path element
-  zigZagPath.setAttribute('stroke-dashoffset', zigZagoffset);
-  anime({
-    targets: zigZagPath,
-    strokeDashoffset: [zigZagoffset, 0],
-    duration: 3000,
-    delay: anime.random(0, 2000),
-    loop: true,
-    direction: 'alternate',
-    easing: 'easeInOutSine',
-    autoplay: true
-  });
+const zigZagPath = document.querySelector('#zigzag path');
+// setDashoffset figures out how long our path is
+const zigZagoffset = anime.setDashoffset(zigZagPath);
+// we then set that back onto the path element
+zigZagPath.setAttribute('stroke-dashoffset', zigZagoffset);
+anime({
+  targets: zigZagPath,
+  strokeDashoffset: [zigZagoffset, 0],
+  duration: 3000,
+  delay: anime.random(0, 2000),
+  loop: true,
+  direction: 'alternate',
+  easing: 'easeInOutSine',
+  autoplay: true
+});
+
+//wave animation. we duplicate the same code (pretty much) for the wave
+const wave = document.querySelector('#wave path');
+const waveOffset = anime.setDashoffset(wave);
+wave.setAttribute('stroke-dashoffset', waveOffset);
+anime({
+  targets: wave,
+  strokeDashoffset: [waveOffset, 0],
+  duration: 2000,
+  loop: true,
+  direction: 'alternate',
+  easing: 'easeInOutSine'
+});
