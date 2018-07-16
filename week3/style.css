@@ -3,3 +3,23 @@
     so here we are telling the circles to transform from the center */
   transform-origin: center;
 }
+
+.w-200{
+  width:200%;
+}
+
+.bg-blue {
+  background-color: #77EBFD;
+}
+
+.bg-red {
+  background-color: #F9343D;
+}
+
+.bg-yellow {
+  background-color: #FFF44C;
+}
+
+.bg-purple {
+  background-color: #CA8CF9;
+}

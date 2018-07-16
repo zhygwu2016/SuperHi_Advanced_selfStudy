@@ -1,5 +1,17 @@
 //http://animejs.com/documentation/#CSStransforms
-const CSStransforms = anime({
+
+// 左上角
+anime({
+  targets: '.conveyor',
+  // we only want to move it left by half of its width
+  translateX: '-50%',
+  duration: 1500,
+  loop: true,
+  // remove the default easing effect to keep it consistently smooth
+  easing: 'linear'
+});
+
+anime({
   //just a regular css selector
   targets: '#tunnel circle',
   scale: 1.1,
@@ -20,3 +32,21 @@ const CSStransforms = anime({
   // }
   delay: (el,i)=> i*50
 });
+
+
+// https://codepen.io/juliangarnier/pen/ZeEpgd
+  const zigZagPath = document.querySelector('#zigzag path');
+  // setDashoffset figures out how long our path is
+  const zigZagoffset = anime.setDashoffset(zigZagPath);
+  // we then set that back onto the path element
+  zigZagPath.setAttribute('stroke-dashoffset', zigZagoffset);
+  anime({
+    targets: zigZagPath,
+    strokeDashoffset: [zigZagoffset, 0],
+    duration: 3000,
+    delay: anime.random(0, 2000),
+    loop: true,
+    direction: 'alternate',
+    easing: 'easeInOutSine',
+    autoplay: true
+  });
