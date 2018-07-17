@@ -1,5 +1,66 @@
 //http://animejs.com/documentation/#CSStransforms
 
+// we want to duplicate our crosses content 10 times
+const duplicateHtml = (element, quantity) => {
+  const content = element.innerHTML;
+  const newContent = new Array(quantity).fill(element.innerHTML).join('');
+  //console.log(crosses);
+  element.innerHTML = newContent;
+};
+
+// we duplicate the content 10 times using our new fancy function
+const crosses = document.querySelector('#crosses');
+duplicateHtml(crosses, 10);
+
+// we duplicate the dots 40 times
+duplicateHtml(document.querySelector('#dots'), 40);
+
+const allDots = document.querySelectorAll('#dots .dot');
+// dots animation
+// here we animate each dot separately by looping through
+// and running anime on each individual one
+allDots.forEach(dot =>{
+  //console.log(dot);
+  anime({
+    targets: dot,
+    rotate: (el, i) => anime.random(90, 360),
+    delay: (el, i) => anime.random(0, 500),
+    duration: (el, i) => anime.random(250, 750),
+    loop: true,
+    easing: 'easeInOutSine',
+    direction: 'alternate',
+    autoplay: true
+  });
+});
+
+// we want to create 20 dots
+duplicateHtml(document.querySelector('#circles'), 20);
+anime({
+  targets: '#circles .dot',
+  // when we use an array it runs through each property in order
+  scale: [0, 1.2],
+  delay: (el, i) => i * 100,
+  duration: 250,
+  loop: true,
+  direction: 'alternate',
+  easing: 'easeInOutSine'
+});
+
+
+
+// Rotating crosses animation
+anime({
+  targets: '#crosses path',
+  rotate: '1turn',
+  delay: (el, i) => i * 100,
+  duration: 1200,
+  loop: true,
+  direction: 'alternate',
+  easing: 'easeInOutSine'
+});
+
+
+
 // 左上角
 anime({
   targets: '.conveyor',
@@ -62,4 +123,36 @@ anime({
   loop: true,
   direction: 'alternate',
   easing: 'easeInOutSine'
+});
+
+
+// Flashing rectangles animation
+anime({
+  targets: '.flash',
+  // we put the colors into an array and grab each one by its index
+  backgroundColor: (el, i) => ['#fff636', '#cb89fc', '#fc3035', '#77ebfd'][i],
+  // apply a random delay to each one
+  delay: (el, i) => anime.random(50, 100),
+  duration: 500,
+  loop: true,
+  direction: 'alternate',
+  easing: 'easeInOutSine'
+});
+
+
+// animation for our squares
+anime({
+  targets: '#squares rect',
+  // we need to force the translate position to center the squares
+  translateX: ['-50%', '-50%'],
+  // we’re not actually animating them, it’s a bit of a hack
+  translateY: ['-50%', '-50%'],
+//   animate rotation from 45 to 0 to -45
+  rotate: [45, 0, -45],
+  // delay each one incrementally by 100ms
+  delay: (el, i) => 100 * i,
+  duration: (el, i) => 750,
+  loop: true,
+  easing: 'easeInOutSine',
+  direction: 'alternate'
 });

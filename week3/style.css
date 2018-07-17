@@ -1,4 +1,6 @@
-.tunnel circle{
+.tunnel circle,
+.crosses path,
+.squares rect{
   /* by default elements transform from their top left corner
     so here we are telling the circles to transform from the center */
   transform-origin: center;
@@ -22,4 +24,31 @@
 
 .bg-purple {
   background-color: #CA8CF9;
+}
+
+.box{
+  /* using the inset keyword we can put shows inside of elements */
+  box-shadow: inset 0 0 0 4px #000;
+}
+
+.conveyor-belt {
+  border-left: solid 4px #000;
+  border-right: solid 4px #000;
+}
+
+.page {
+  border: solid 4px #000;
+}
+
+.dot{
+  width:8px;
+  height:8px;
+  background-color: #000;
+}
+
+.squares rect {
+	/* this will offset our boxes so they appear exactly in the middle */
+  transform: translate(-50%, -50%);
+  /* transform: translate(-50%, -50%); doesn't work in Chrome. So we use following: */
+  transform-box:fill-box;
 }
