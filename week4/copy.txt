@@ -1,0 +1,91 @@
+---------------------------------------------
+
+Final site: https://good-times.superhi.com
+
+---------------------------------------------
+
+Slides: https://goodtimes-slides.netlify.com
+
+---------------------------------------------
+
+Fonts:
+
+Body: 18px/1.5 HK Grotesk Medium
+Heading: 110px/1 HK Grotesk Bold
+Heading (orange): 120px/1
+Blockquote: 36px
+Speaker title: HK Grotesk Regular
+
+---------------------------------------------
+
+Colors:
+
+
+Charcoal gray: #414141
+Light gray: ##979797
+Orange: #ff3c15
+Light orange: ##ffe6dd
+White: #fff
+
+---------------------------------------------
+
+Stripe login:
+
+hi@superhi.com
+6VUa9Fh9)cxM$VxC3EeR
+
+---------------------------------------------
+
+Copy:
+
+About
+Speakers
+Schedule
+Register
+
+March 3, 2018
+
+I’m ready for a good time
+
+About
+
+Good Times is an design and front-end development conference held in the heart of Melbourne, Australia. The goal of the conference is to gather people from all around the world for a weekend of inspiration and meeting new people.
+
+“Design is as much an act of spacing as an act of marking.”
+
+Ellen Lupton
+
+Speakers
+
+Marianna Manning
+UX Designer, Lite.ly
+
+Jose Vega
+Creative Director, Open
+
+Hattie Richardson
+Project Manager, IBN
+
+Nat Watts
+Founder + Developer, Uppi
+
+Schedule
+
+Saturday Mar 3
+
+10:30
+Coffee + Brunch
+
+12:30
+Leadership & Design Systems
+
+14:30
+Design for Future Worlds
+
+15:30
+Pixels and Psychology
+
+19:45
+VR/AR in 2030 and Beyond
+
+Register
