@@ -1,0 +1,26 @@
+body{
+  font-family: 'HK-Grotesk-Medium', sans-serif;
+  font-size:18px;
+  line-height: 1.5;
+  color:#414141;
+
+  background-image: url(./assets/images/background.jpg);
+  background-size: 100% auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+a{
+  text-decoration: none;
+  color:#414141;
+}
+
+.heading {
+  color: #fff;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #fff;
+  font-family: 'HK-Grotesk-Bold', sans-serif;
+  font-size: 110px;
+  line-height: 1;
+}
