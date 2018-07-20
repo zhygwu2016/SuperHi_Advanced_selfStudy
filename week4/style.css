@@ -1,3 +1,9 @@
+/* we declare our variable inside a :root selector */
+:root{
+  /* give the variable a name and value (needs two -- in front) */
+  --orange:#FF3C15;
+}
+
 body{
   font-family: 'HK-Grotesk-Medium', sans-serif;
   font-size:18px;
@@ -23,4 +29,30 @@ a{
   font-family: 'HK-Grotesk-Bold', sans-serif;
   font-size: 110px;
   line-height: 1;
+}
+
+.button{
+  display: inline-block;
+  background-color: var(--orange);
+  color:#fff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border:none;
+  padding:24px 72px;
+  font-family: 'HK-Grotesk-Bold', sans-serif;
+}
+
+.container{
+  max-width:1080px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.heading-orange{
+  font-size: 120px;
+  -webkit-text-stroke-color:var(--orange);
+  margin-bottom: 3rem;
+  color:var(--orange);
 }
