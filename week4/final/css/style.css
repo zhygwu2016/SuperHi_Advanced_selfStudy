@@ -9,7 +9,7 @@ body {
   font-size: 18px;
   line-height: 1.5;
   color: #414141;
-  
+
   background-image: url(background.jpg);
   background-size: 100% auto;
   background-position: center top;
@@ -172,9 +172,3 @@ blockquote {
     -webkit-text-stroke-width: 1px;
   }
 }
-
-
-
-
-
-

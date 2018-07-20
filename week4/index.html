@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="basscss-grid.css">
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="fonts.css">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="style.css">
   </head>
+
   <body>
 
     <div class="min-vh-100 container pt4 pb5 flex flex-column justify-between mb5-ns">
@@ -89,17 +90,17 @@
         </div>
       </div>
 
-      <div class="flex flex-wrap justify-between">
-        <div class="col-12 sm-col-6 md-col-5 pt5-m pt5-l">
+      <div class="flex flex-wrap justify-between mb5-ns">
+        <div class="col-12 sm-col-6 md-col-5 pt5-m pt5-l mb4 mb0-ns">
           <img src="assets/images/about-1.jpg">
         </div>
-        <div class="col-12 sm-col-6 md-col-4">
+        <div class="col-12 sm-col-6 md-col-4 mb4 mb0-ns">
           <img src="assets/images/about-2.jpg">
         </div>
       </div>
 
-      <div class="flex flex-wrap justify-between">
-        <div class="col-12 sm-col-5 md-col-4 sm-indent-1 md-indent-2 pt5-ns">
+      <div class="flex flex-wrap justify-between mb4 mb5-ns">
+        <div class="col-12 sm-col-5 md-col-4 sm-indent-1 md-indent-2 pt5-ns mb4 mb0-ns">
           <img src="assets/images/about-3.jpg">
         </div>
         <div class="col-12 sm-col-5 md-col-4">
@@ -109,6 +110,89 @@
           <p class="cite">
             Ellen Lupton
           </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container speakers mb4 mb5-ns" id="speakers">
+
+      <h1 class="heading heading-orange ">
+        Speakers
+      </h1>
+      <div class="flex flex-wrap ">
+        <div class="speaker col-6 sm-col-3 mb4">
+          <img src="assets/images/marianna.jpg" class="speaker-image">
+          <p class="speaker-name pr2">
+            Marianna Manning
+          </p>
+          <p class="speaker-title pr2">
+            UX Designer, Lite.ly
+          </p>
+        </div>
+        <div class="speaker col-6 sm-col-3 mb4">
+          <img src="assets/images/jose.jpg" class="speaker-image">
+          <p class="speaker-name pr2">
+            Jose Vega
+          </p>
+          <p class="speaker-title pr2">
+            Creative Director, Open
+          </p>
+        </div>
+        <div class="speaker col-6 sm-col-3">
+          <img src="assets/images/hattie.jpg" class="speaker-image">
+          <p class="speaker-name pr2">
+            Hattie Richardson
+          </p>
+          <p class="speaker-title pr2">
+            Project Manager, IBN
+          </p>
+        </div>
+        <div class="speaker col-6 sm-col-3">
+          <img src="assets/images/nat.jpg" class="speaker-image">
+          <p class="speaker-name pr2">
+            Nat Watts
+          </p>
+          <p class="speaker-title pr2">
+            Founder + Developer, Uppi
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="container mb4 mb5-ns" id="schedule">
+      <h1 class="heading heading-orange">
+        Schedule
+      </h1>
+      <!-- a combination of flex and overflow-auto gives us a scrollbar
+      when the element runs out of space -->
+      <div class="schedule-container flex overflow-auto">
+        <div class="schedule-day">
+          Saturday Mar 3
+        </div>
+        <div class="schedule flex">
+          <div class="w-20 ph3">
+            <div class="schedule-time">10:30</div>
+            <div class="schedule-event">Coffee + Brunch</div>
+          </div>
+          <div class="w-20 ph3">
+            <div class="schedule-time">12:30</div>
+            <div class="schedule-event">Leadership & Design Systems</div>
+          </div>
+          <div class="w-20 ph3">
+            <div class="schedule-time">14:30</div>
+            <div class="schedule-event">Design for Future Worlds</div>
+          </div>
+          <div class="w-20 ph3">
+            <div class="schedule-time">15:30</div>
+            <div class="schedule-event">Pixels and Psychology</div>
+          </div>
+          <div class="w-20 ph3">
+            <div class="schedule-time">19:45</div>
+            <div class="schedule-event">VR/AR in 2030 and Beyond</div>
+          </div>
         </div>
       </div>
 
@@ -124,6 +208,8 @@
 
 
     <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script src="anime.min.js"></script>
+    <script src="in-view.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
