@@ -110,14 +110,14 @@ function stripeTokenHandler(token){
   // here we handle and make our actual payment
   // 1. we are going to make a variable for our token, name and email
   const stripe_token = token.id;
-  const name = document.querySelector('#name').value;
-  const email = document.querySelector('#email').value;
+  const nameEl = document.querySelector('#name');
+  const emailEl = document.querySelector('#email');
 
   // 2. we are going to grab our form action url from the form
-  const url = form.getAttribute('action');
+  const backendUrl = form.getAttribute('action');
   // 3. we’ll send the data off to the url using fetch
 
-  fetch(url, {
+  fetch(backendUrl, {
     // we tell fetch to POST to our url vs GET
     method: 'POST',
     // tell it we are sending across json data
@@ -129,11 +129,11 @@ function stripeTokenHandler(token){
     body: JSON.stringify(  {
       order: {
         // is the same as stripe_token: stripe_
-        stripe_token,
+        stripe_token: token.id,
         // grab the value from the name element
-        name,
+        name: nameEl.value,
         // grab the value from the email element
-        email
+        email: emailEl.value
       }
     })
   })
@@ -148,9 +148,8 @@ function stripeTokenHandler(token){
         const order = data.order;
         // we are going to tell the user their payment was succesful
         form.querySelector('.form-title').textContent = 'Payment successful!';
-        form.querySelector('.form-fields').textContent =
-        `
-        Thank you ${name}, your payment was successful and we have sent an email receipt to ${email}
+        form.querySelector('.form-fields').textContent =`
+         Thank you ${name}, your payment was successful and we have sent an email receipt to ${email}
         `;
         form.classList.remove('processing');
       }
