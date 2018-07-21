@@ -1,18 +1,18 @@
-.register-image {
-  background-image: url(location.jpg);
-	background-position: center bottom;
+.register-image{
+  background-image: url(./assets/images/location.jpg);
+  background-position: center bottom;
 }
 
 /* most of the time you’ll want to override the
-default input styles (which is quite a lot of stuff) */
-input {
-  border: none;
+   default input styles (which is quite a lot of stuff) */
+input{
+  border:none;
   line-height: 1.5;
   font-size: 16px;
-  height: 48px;
-  width: 100%;
-  padding: 0 12px;
-  outline: none;
+  height:48px;
+  width:100%;
+  padding:0 12px;
+  outline:none;
   color: #32325d;
 }
 
@@ -49,20 +49,21 @@ input::placeholder {
   transform: translateY(-100%);
 }
 
+
 /* here we show a pointer cursor so the user knows they can click the button */
 button {
   cursor: pointer;
   outline: none;
 }
 
-.button {
+.button{
   display: inline-block;
   background-color: var(--orange);
-  color: #fff;
+  color:#fff;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  border: none;
-  padding: 24px 72px;
+  border:none;
+  padding:24px 72px;
   font-family: 'HK-Grotesk-Bold', sans-serif;
 }
 
@@ -77,19 +78,19 @@ button {
   color: var(--orange);
 }
 
-.StripeElement {
+.StripeElement{
   background-color: #fff;
-  padding: 12px;
+  padding:12px;
 }
 
 /* here we lock the form when it’s submitting */
-.form-fields {
-  transition: opacity 0.5s ease;
+.form-fields{
+  transition:opacity 0.5s ease;
 }
 
-.processing .form-fields {
-  opacity: 0.5;
-	/* disabled interaction with the form when it’s submitting */
+.processing .form-fields{
+  opacity:0.5;
+  /* disabled interaction with the form when it’s submitting */
   pointer-events: none;
 }
 

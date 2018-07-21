@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="register.css">
     <link rel="stylesheet" href="style.css">
   </head>
 
@@ -92,16 +93,16 @@
 
       <div class="flex flex-wrap justify-between mb5-ns">
         <div class="col-12 sm-col-6 md-col-5 pt5-m pt5-l mb4 mb0-ns">
-          <img src="assets/images/about-1.jpg">
+          <img src="assets/images/about-1.jpg" class="image fade db">
         </div>
         <div class="col-12 sm-col-6 md-col-4 mb4 mb0-ns">
-          <img src="assets/images/about-2.jpg">
+          <img src="assets/images/about-2.jpg" class="image fade db">
         </div>
       </div>
 
       <div class="flex flex-wrap justify-between mb4 mb5-ns">
         <div class="col-12 sm-col-5 md-col-4 sm-indent-1 md-indent-2 pt5-ns mb4 mb0-ns">
-          <img src="assets/images/about-3.jpg">
+          <img src="assets/images/about-3.jpg" class="image fade db">
         </div>
         <div class="col-12 sm-col-5 md-col-4">
           <blockquote>
@@ -113,103 +114,156 @@
         </div>
       </div>
 
-    </div>
+      <div class="speakers mb4 mb5-ns" id="speakers">
 
-    <div class="container speakers mb4 mb5-ns" id="speakers">
+        <h1 class="heading heading-orange ">
+          Speakers
+        </h1>
+        <div class="flex flex-wrap ">
+          <div class="speaker col-6 sm-col-3 mb4">
+            <img src="assets/images/marianna.jpg" class="speaker-image">
+            <p class="speaker-name pr2">
+              Marianna Manning
+            </p>
+            <p class="speaker-title pr2">
+              UX Designer, Lite.ly
+            </p>
+          </div>
+          <div class="speaker col-6 sm-col-3 mb4">
+            <img src="assets/images/jose.jpg" class="speaker-image">
+            <p class="speaker-name pr2">
+              Jose Vega
+            </p>
+            <p class="speaker-title pr2">
+              Creative Director, Open
+            </p>
+          </div>
+          <div class="speaker col-6 sm-col-3">
+            <img src="assets/images/hattie.jpg" class="speaker-image">
+            <p class="speaker-name pr2">
+              Hattie Richardson
+            </p>
+            <p class="speaker-title pr2">
+              Project Manager, IBN
+            </p>
+          </div>
+          <div class="speaker col-6 sm-col-3">
+            <img src="assets/images/nat.jpg" class="speaker-image">
+            <p class="speaker-name pr2">
+              Nat Watts
+            </p>
+            <p class="speaker-title pr2">
+              Founder + Developer, Uppi
+            </p>
+          </div>
 
-      <h1 class="heading heading-orange ">
-        Speakers
-      </h1>
-      <div class="flex flex-wrap ">
-        <div class="speaker col-6 sm-col-3 mb4">
-          <img src="assets/images/marianna.jpg" class="speaker-image">
-          <p class="speaker-name pr2">
-            Marianna Manning
-          </p>
-          <p class="speaker-title pr2">
-            UX Designer, Lite.ly
-          </p>
-        </div>
-        <div class="speaker col-6 sm-col-3 mb4">
-          <img src="assets/images/jose.jpg" class="speaker-image">
-          <p class="speaker-name pr2">
-            Jose Vega
-          </p>
-          <p class="speaker-title pr2">
-            Creative Director, Open
-          </p>
-        </div>
-        <div class="speaker col-6 sm-col-3">
-          <img src="assets/images/hattie.jpg" class="speaker-image">
-          <p class="speaker-name pr2">
-            Hattie Richardson
-          </p>
-          <p class="speaker-title pr2">
-            Project Manager, IBN
-          </p>
-        </div>
-        <div class="speaker col-6 sm-col-3">
-          <img src="assets/images/nat.jpg" class="speaker-image">
-          <p class="speaker-name pr2">
-            Nat Watts
-          </p>
-          <p class="speaker-title pr2">
-            Founder + Developer, Uppi
-          </p>
-        </div>
-
-      </div>
-    </div>
-
-
-    <div class="container mb4 mb5-ns" id="schedule">
-      <h1 class="heading heading-orange">
-        Schedule
-      </h1>
-      <!-- a combination of flex and overflow-auto gives us a scrollbar
-      when the element runs out of space -->
-      <div class="schedule-container flex overflow-auto">
-        <div class="schedule-day">
-          Saturday Mar 3
-        </div>
-        <div class="schedule flex">
-          <div class="w-20 ph3">
-            <div class="schedule-time">10:30</div>
-            <div class="schedule-event">Coffee + Brunch</div>
-          </div>
-          <div class="w-20 ph3">
-            <div class="schedule-time">12:30</div>
-            <div class="schedule-event">Leadership & Design Systems</div>
-          </div>
-          <div class="w-20 ph3">
-            <div class="schedule-time">14:30</div>
-            <div class="schedule-event">Design for Future Worlds</div>
-          </div>
-          <div class="w-20 ph3">
-            <div class="schedule-time">15:30</div>
-            <div class="schedule-event">Pixels and Psychology</div>
-          </div>
-          <div class="w-20 ph3">
-            <div class="schedule-time">19:45</div>
-            <div class="schedule-event">VR/AR in 2030 and Beyond</div>
-          </div>
         </div>
       </div>
 
-    </div>
 
+      <div class="container mb4 mb5-ns" id="schedule">
+        <h1 class="heading heading-orange">
+          Schedule
+        </h1>
+        <!-- a combination of flex and overflow-auto gives us a scrollbar
+        when the element runs out of space -->
+        <div class="schedule-container flex overflow-auto">
+          <div class="schedule-day">
+            Saturday Mar 3
+          </div>
+          <div class="schedule flex">
+            <div class="w-20 ph3">
+              <div class="schedule-time">10:30</div>
+              <div class="schedule-event">Coffee + Brunch</div>
+            </div>
+            <div class="w-20 ph3">
+              <div class="schedule-time">12:30</div>
+              <div class="schedule-event">Leadership & Design Systems</div>
+            </div>
+            <div class="w-20 ph3">
+              <div class="schedule-time">14:30</div>
+              <div class="schedule-event">Design for Future Worlds</div>
+            </div>
+            <div class="w-20 ph3">
+              <div class="schedule-time">15:30</div>
+              <div class="schedule-event">Pixels and Psychology</div>
+            </div>
+            <div class="w-20 ph3">
+              <div class="schedule-time">19:45</div>
+              <div class="schedule-event">VR/AR in 2030 and Beyond</div>
+            </div>
+          </div>
+        </div>
 
+      </div>
 
+      <div class="container" id="register">
+        <h1 class="heading heading-orange">
+          Register
+        </h1>
 
+        <div class="flex flex-wrap mb4 mb5-ns">
+          <div class="col-12 sm-col-6 cover register-image"></div>
+          <div class="col-12 sm-col-6 register relative bg-orange orange">
+            <div class="front location flex flex-wrap pa4 items-center bg-orange relative z-2 col-12">
+              <p class="mt0 mb4 col-12">3 March, 2018
+                <br> Melbourne, Australia
+              </p>
+              <p class="mt0 mb4 col-12">Fitzroy Social
+                <br> 222 Brunswick St, Fitzroy VIC 3065
+              </p>
+              <button class="button button-small button-outline register-button">Register</button>
+            </div>
+            <form action="https://api.superhi.com/api/test/orders" class="back form z-1 pa4 col-12" id="payment-form">
+              <div class="spinner"></div>
+              <h3 class='mt0 mb2 form-title'>Your details</h3>
+              <div class='form-fields'>
+                <!-- the required attribute makes the form unable to submit unless the fields are filled -->
+                <input name="name" class="mb2 db" placeholder="Name" id="name" required>
+                <input name="email" class="mb2 db" placeholder="Email" id="email" required type="email">
+                <div id="card-element" class="mb2"></div>
+                <div id="card-errors" role="alert"></div>
+                <div class="pt2">
+                  <button class="button button-small">Buy ticket for $100</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
 
+      <div class="flex flex-wrap justify-between pt5-ns mb4 mb5-ns">
+        <div class="col-12 sm-col-5 sm-indent-1 mb4 mb0-ns">
+          <img src="assets/images/about-4.jpg" class="image fade db">
+        </div>
+        <div class="col-12 sm-col-5">
+          <img src="assets/images/about-5.jpg" class="image fade db">
+        </div>
+      </div>
 
+    </div> <!-- this div end tag is for the container class -->
 
+    <footer class="footer pv3 pv5-ns">
+      <div class="container flex justify-between items-center">
+        <a href="#top" class="footer-link contain bg-center bg-no-repeat"></a>
+        <nav class="footer-nav flex items-center">
+          <a href="https://twitter.com" class="no-underline db">
+            <img src="assets/images/twitter.svg" class="db">
+          </a>
+          <a href="https://facebook.com" class="no-underline ml3 db">
+            <img src="assets/images/facebook.svg" class="db">
+          </a>
+        </nav>
+      </div>
+    </footer>
 
-
-
+    <!-- here we include stripe on our page -->
+    <!-- https://stripe.com/docs/stripe-js/elements/quickstart -->
+    <script src="https://js.stripe.com/v3/"></script>
     <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
     <script src="anime.min.js"></script>
     <script src="in-view.js"></script>
+    <script src="vanilla-tilt.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
