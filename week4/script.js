@@ -42,7 +42,7 @@ registerButton.addEventListener('click', event => {
 
 // ↓↓↓ https://stripe.com/docs/stripe-js/elements/quickstart
 // Create a Stripe client.
-const stripe = Stripe('pk_test_g6do5S237ekq10r65BnxO6S0');
+const stripe = Stripe('pk_test_cucWEL0zZ0Ttl8sDgYcAdeD6');
 
 // Create an instance of Elements.
 const elements = stripe.elements();
@@ -149,7 +149,7 @@ function stripeTokenHandler(token){
         // we are going to tell the user their payment was succesful
         form.querySelector('.form-title').textContent = 'Payment successful!';
         form.querySelector('.form-fields').textContent =`
-         Thank you ${name}, your payment was successful and we have sent an email receipt to ${email}
+        Thank you ${order.name}, your payment was successful and we have sent an email receipt to ${order.email}
         `;
         form.classList.remove('processing');
       }
@@ -163,8 +163,8 @@ function stripeTokenHandler(token){
     });
 
   //console.log(stripe_token, name, email);
-
 }
+
 
 // grab all the anchor tags on the page
 const anchors = document.querySelectorAll('a');
